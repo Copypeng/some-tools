@@ -27,7 +27,6 @@ dateFormat('yyyy-MM-dd hh:mm:ss');
 支持的模式有：
 ````
 支持的模式字母有： 
-
 - y: 年
 - M: 月份(1-12)
 - d: 天(1-31)
@@ -37,3 +36,7 @@ dateFormat('yyyy-MM-dd hh:mm:ss');
 - S: 毫秒(0-999)
 - q: 季度(1-4) 
 ````
+###myPin
+based on [jQuery.pin](https://github.com/webpop/jquery.pin)
+
+暂未做任何改进　2014-5-10
