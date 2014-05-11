@@ -13,10 +13,13 @@ $page_content=curl_exec($ch);
 curl_close($ch);
 // 正则匹配模式
 $preg='/<a .*?href="(.*?)".*?>(.*?)<\/a>/is';
+$file_name = 'result.txt';
 // 开始匹配
 preg_match_all($preg,$page_content,$matches);
-//输出所有链接以及内容
+//将所有链接以及内容写入文件
+$fh = fopen($file_name, 'w');
 for ($i=0; $i < count($matches[0]); $i++) {
-	echo $matches[0][$i].'<br/>';
+	echo fwrite($fh, $matches[0][$i]."\n");
 }
+fclose($fh);
 ?>
