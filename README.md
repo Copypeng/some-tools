@@ -14,7 +14,7 @@
 
 - mySlider
 
-    一个简单强悍的Jquery幻灯片插件。
+    一个简单的Jquery幻灯片插件。将代码最简化。
 
 - 数据库固定时间(如每５分钟，每半小时)平均化处理语句
 
@@ -24,6 +24,7 @@
     可以一次性采集某页面上所有超链接以及链接内容（文本，照片）
     
 - 将数据库中最后更新时间比当前时间晚于半个小时的所有的传感器状态设置为false
+
 ###dateFormat
 
 调用方式：
@@ -61,7 +62,24 @@ based on [jQuery.pin](https://github.com/webpop/jquery.pin)
 
 ###mySlider
 
-暂未完成
+暂未实现“面向对象”
+
+调用方式:
+````
+    $('.className').bannerSlide();
+````
+HTML结构：
+````
+<div class="className">
+    <ul class="img-wrap">
+        <li><img src="your_img.png"></li>
+        <li></li>
+        ...
+    </ul>
+    <ul class="num-wrap">
+    </ul>
+</div>
+````
 
 ###数据库固定时间平均化处理
 假如有以下结构的表
