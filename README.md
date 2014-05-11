@@ -6,17 +6,22 @@
 
 - dateFormat 
 
-Javascript时间格式化插件。格式化一个本地时间，支持格式化指定Unix时间戳。
+    Javascript时间格式化插件。格式化一个本地时间，支持格式化指定Unix时间戳。
  
 - myPin
 
-一个在页面上固定菜单或其他页面元素的Jquery插件，功能很强悍。
+    一个在页面上固定菜单或其他页面元素的Jquery插件，功能很强悍。
 
 - mySlider
 
-一个简单强悍的Jquery幻灯片插件。
+    一个简单强悍的Jquery幻灯片插件。
 
 - 数据库固定时间(如每５分钟，每半小时)平均化处理语句
+
+
+- php页面超链接采集脚本
+
+    可以一次性采集某页面上所有超链接以及链接内容（文本，照片）
 
 ###dateFormat
 
@@ -81,3 +86,7 @@ SELECT  `data_timestamp` -  `data_timestamp` % ( 10 *60 ) , AVG(  `data_value` )
 FROM  `yl_sensor_data` 
 GROUP BY  `data_timestamp` -  `data_timestamp` % ( 10 *60 ) 
 ````
+
+###php页面采集脚本
+
+很简单，具体请看curl.php代码。示例为一次性采集腾讯首页所有超链接及其内容。
