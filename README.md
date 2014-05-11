@@ -89,4 +89,4 @@ GROUP BY  `data_timestamp` -  `data_timestamp` % ( 10 *60 )
 
 ###php页面采集脚本
 
-很简单，具体请看curl.php代码。示例为一次性采集腾讯首页所有超链接及其内容,写入.txt文件。
+很简单，具体请看curl.php代码。示例为一次性采集腾讯首页所有超链接及其内容,写入.txt文件
